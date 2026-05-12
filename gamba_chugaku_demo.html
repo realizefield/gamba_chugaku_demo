@@ -107,54 +107,7 @@
 
   footer { text-align: center; padding: 24px; font-size: 0.72rem; color: var(--muted); border-top: 1px solid #e0e0e0; margin-top: 40px; }
 
-  /* ===== 数学復習ボタン ===== */
-  .review-section {
-    background: var(--white);
-    border-radius: var(--radius);
-    padding: 24px 20px 20px;
-    margin-bottom: 48px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    border-top: 4px solid var(--orange);
-  }
-  .review-intro {
-    font-size: 0.78rem; color: var(--muted); line-height: 1.8;
-    margin-bottom: 16px;
-    background: var(--orange-light);
-    border-radius: 8px; padding: 10px 14px;
-  }
-  .review-intro strong { color: var(--orange); }
-  .review-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  @media(max-width: 560px){ .review-grid { grid-template-columns: 1fr 1fr; } }
-  @media(max-width: 360px){ .review-grid { grid-template-columns: 1fr; } }
-  .review-btn {
-    display: flex; align-items: center; gap: 10px;
-    background: var(--navy-light);
-    border: 2px solid transparent;
-    border-radius: 10px;
-    padding: 14px 12px;
-    text-decoration: none;
-    color: var(--navy);
-    font-weight: 700;
-    transition: all 0.2s;
-  }
-  .review-btn:hover {
-    border-color: var(--orange);
-    background: var(--orange-light);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 14px rgba(232,101,10,0.15);
-  }
-  .review-btn-icon {
-    width: 40px; height: 40px; border-radius: 8px; flex-shrink: 0;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.4rem; background: white;
-  }
-  .review-btn-title { font-size: 0.82rem; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
-  .review-btn-sub { font-size: 0.65rem; color: var(--muted); font-weight: 400; }
-  .review-btn:hover .review-btn-title { color: var(--orange); }
+
 </style>
 </head>
 <body>
@@ -275,22 +228,62 @@
       <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
-    <!-- 数学 -->
-    <a class="subject-card s2" href="https://realizefield.github.io/gamba-chugaku/gamba_chugaku.html" target="_blank">
+    <!-- 数学：文章題 -->
+    <a class="subject-card s2" href="https://realizefield.github.io/j-math-bushodai1/bunshou_index.html" target="_blank">
       <div class="card-top">
-        <div class="card-emoji">📐</div>
+        <div class="card-emoji">📝</div>
         <div class="card-info">
           <div class="card-category">数学</div>
-          <div class="card-name">計算・方程式・関数</div>
+          <div class="card-name">文章題</div>
           <div class="card-level">⭐ 中1〜中3対応</div>
         </div>
       </div>
-      <div class="card-desc">計算の基礎から方程式・関数・図形まで段階的に学習。つまずきやすいポイントを丁寧に解説。</div>
+      <div class="card-desc">一次方程式・連立方程式・二次方程式の文章題を、段階的に解けるように丁寧に解説。式の立て方が身につきます。</div>
+      <div class="card-units">
+        <span class="unit-tag">一次方程式</span>
+        <span class="unit-tag">連立方程式</span>
+        <span class="unit-tag">食塩水・速さ</span>
+        <span class="unit-tag">二次方程式</span>
+      </div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
+    </a>
+
+    <!-- 数学：関数 -->
+    <a class="subject-card s2" href="https://realizefield.github.io/j-math-kansu/kansu_index.html" target="_blank">
+      <div class="card-top">
+        <div class="card-emoji">📊</div>
+        <div class="card-info">
+          <div class="card-category">数学</div>
+          <div class="card-name">関数</div>
+          <div class="card-level">⭐ 中1〜中3対応</div>
+        </div>
+      </div>
+      <div class="card-desc">正比例・反比例から一次関数・二次関数まで、グラフと式を関連付けて学習。視覚的に理解できます。</div>
+      <div class="card-units">
+        <span class="unit-tag">正比例・反比例</span>
+        <span class="unit-tag">一次関数</span>
+        <span class="unit-tag">二次関数</span>
+        <span class="unit-tag">グラフ</span>
+      </div>
+      <div class="card-footer-link">デモを見る <span>→</span></div>
+    </a>
+
+    <!-- 数学：計算 -->
+    <a class="subject-card s2" href="https://realizefield.github.io/j-math/gamba_chugaku.html" target="_blank">
+      <div class="card-top">
+        <div class="card-emoji">🧮</div>
+        <div class="card-info">
+          <div class="card-category">数学</div>
+          <div class="card-name">計算</div>
+          <div class="card-level">⭐ 中1〜中3対応</div>
+        </div>
+      </div>
+      <div class="card-desc">分数・小数・正負の数から方程式の計算まで、つまずきやすいポイントを丁寧に解説。計算力の土台を固めます。</div>
       <div class="card-units">
         <span class="unit-tag">正負の数</span>
-        <span class="unit-tag">方程式</span>
-        <span class="unit-tag">関数</span>
-        <span class="unit-tag">図形・証明</span>
+        <span class="unit-tag">文字式</span>
+        <span class="unit-tag">方程式の計算</span>
+        <span class="unit-tag">平方根</span>
       </div>
       <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
@@ -355,44 +348,6 @@
       <div class="card-footer-link">デモを見る <span>→</span></div>
     </a>
 
-  </div>
-
-  <!-- ===== 数学 復習ボタン ===== -->
-  <div class="section-title">📐 数学 単元別 復習はこちら</div>
-  <div class="review-section">
-    <div class="review-intro">
-      <strong>基礎ゼロから学習できます。</strong>分数・小数／正負の数／方程式など、苦手なところだけ選んでくり返し練習しましょう！
-    </div>
-    <div class="review-grid">
-
-      <!-- 中学数学計算（総合） -->
-      <a class="review-btn" href="https://realizefield.github.io/j-math/gamba_chugaku.html" target="_blank">
-        <div class="review-btn-icon">🧮</div>
-        <div>
-          <div class="review-btn-title">中学数学計算（総合）</div>
-          <div class="review-btn-sub">分数・小数／正負の数／方程式 ほか</div>
-        </div>
-      </a>
-
-      <!-- ME 一次方程式文章題 -->
-      <a class="review-btn" href="https://realizefield.github.io/j-mathME/index_ME.html" target="_blank">
-        <div class="review-btn-icon">📝</div>
-        <div>
-          <div class="review-btn-title">一次方程式文章題</div>
-          <div class="review-btn-sub">ME単元 ／ 応用</div>
-        </div>
-      </a>
-
-      <!-- MF 連立方程式 -->
-      <a class="review-btn" href="https://realizefield.github.io/gamba-chugaku/gamba_chugaku.html" target="_blank">
-        <div class="review-btn-icon">📈</div>
-        <div>
-          <div class="review-btn-title">連立方程式</div>
-          <div class="review-btn-sub">MF単元 ／ 加減法・代入法</div>
-        </div>
-      </a>
-
-    </div>
   </div>
 
   <!-- ===== 特長 ===== -->
